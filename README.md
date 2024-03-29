@@ -55,6 +55,9 @@ Dengan awk, line yang berisi data pembelian oleh customer atas nama Adriaens dap
 ### Kendala
 Tidak ada kendala
 
+### Revisi
+Tidak ada revisi
+
 ## Soal 2
 ### 2a
 Awalnya, kita diminta untuk membuat 2 Shell Script bernama regsister.sh dan login.sh
@@ -199,6 +202,9 @@ Semua kemungkinan keberhasilan serta kegagalan telah dicatat dengan baik dalam f
 ### Kendala
 Tidak ada kendala
 
+### Revisi
+Tidak ada revisi
+
 ## Soal 3
 ### 3a
 ```shell
@@ -310,6 +316,9 @@ Tentunya setiap kali ekstraksi dan dekripsi juga akan tersimpan di dalan `image.
 ### Kendala
 Tidak ada kendala
 
+### Revisi
+Tidak ada revisi
+
 ## Soal 4
 ### 4a
 ```shell
@@ -379,3 +388,5 @@ chmod 400 "/home/rafaelega24/log/metrics_agg_$(date +'%Y%m%d%H').log"
 ### Kendala
 Tidak ada kendala
 
+### Revisi
+Tidak ada revisi
