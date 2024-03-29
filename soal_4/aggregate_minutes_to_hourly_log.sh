@@ -17,7 +17,10 @@ avg_disk_status=$(awk -F, '{print $11}' "/home/rafaelega24/log/metrics_$(date +'
 echo "type,mem_total,mem_used,mem_free,mem_shared,mem_buff,mem_available,swap_total,swap_used,swap_free,path,path_size
 maximum,$max_ram_status,$max_swap_status,/home/rafaelega24,$max_disk_status
 minimum,$min_ram_status,$min_swap_status,/home/rafaelega24,$min_disk_status 
-avgerage,$avg_ram_status,$avg_swap_status,/home/rafaelega24,$avg_disk_status" | sudo tee "/home/rafaelega24/log/metrics_$(date +'%Y%m%d%H').log"
+average,$avg_ram_status,$avg_swap_status,/home/rafaelega24,$avg_disk_status" | sudo tee "/home/rafaelega24/log/metrics_agg_$(date +'%Y%m%d%H').log"
+
+chmod 400 "/home/rafaelega24/log/metrics_agg_$(date +'%Y%m%d%H').log"
+rm  -rf "/home/rafaelega24/log/metrics_$(date +'%Y%m%d%H').log"
 
 #konfigurasi crontab
-#0 * * * * /home/rafaelega24/SISOP/modul1/4/aggregate_minutes_to_hourly_log.sh
+#59 * * * * /home/rafaelega24/SISOP/modul1/4/aggregate_minutes_to_hourly_log.sh
